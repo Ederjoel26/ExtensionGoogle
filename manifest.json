@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Save Gambling Contact",
+    "description": "Save your contacts",
+    "version": "1.0",
+    "action":{
+        "default_popup": "/popup/popup.html",
+        "default_icon": "/images/gb128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "webRequest"
+    ],
+    "icons": {
+        "16": "/images/gb16.png",
+        "48": "/images/gb48.png",
+        "128": "/images/gb128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://web.whatsapp.com/*"],
+            "js": ["sweetalert2.min.js", "signalr.js", "/scripts/content.js"],
+            "css": ["sweetalert2.min.css"]
+        }
+    ],
+    "web_accessible_resources":[
+        {
+            "resources": ["/images/*.png"],
+            "matches": ["*://web.whatsapp.com/*"]
+        }
+    ]
+}

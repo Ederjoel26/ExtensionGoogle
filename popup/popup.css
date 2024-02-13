@@ -1,0 +1,43 @@
+*{
+    font-family: sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.instruction{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-h{
+    padding: 10px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.container{
+    margin: 0px;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+}
+
+.container-b{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
