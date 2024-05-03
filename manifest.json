@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Save Gambling Contact",
     "description": "Save your contacts",
-    "version": "1.0",
+    "version": "2.0.0",
     "action":{
         "default_popup": "/popup/popup.html",
         "default_icon": "/images/gb128.png"

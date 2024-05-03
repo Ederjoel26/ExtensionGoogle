@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="popup.css">
-</head>
-<body class="container">
-  <div class="container-h text-center">
-    <div class="title">
-      <img src="../images/gb48.png" height="40" width="40"/>
-      <label class="text-center">
-        Save Gambling Contact
-      </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body class="container">
+    <div class="container-h text-center">
+      <div class="title">
+        <img src="../images/gb48.png" height="40" width="40" />
+        <label class="text-center"> Save Gambling Contact </label>
+      </div>
+      <hr />
     </div>
-    <hr>
-  </div>
-  <div id="login" class="text-center">
-    <label class="instruction">Escanea el QR para Iniciar Sesión</label>
-    <div class="container-b">
-      <canvas id="qrcode"></canvas>
+    <div id="login" class="text-center">
+      <div class="input-container">
+        <input type="text" id="username" placeholder="Nombre de usuario" />
+      </div>
+      <div class="input-container">
+        <input type="password" id="password" placeholder="Contraseña" />
+      </div>
+      <button id="loginButton" class="btn-login">Iniciar sesión</button>
     </div>
-  </div>
-  <div id="loged" class="container-b">
-    <div class="instruction">¡Logueado correctamente!</div>
-  </div>
-  <script src="../qrious.js"></script>
-  <script src="../signalr.js"></script>
-  <script src="popup.js"></script>
-</body>
+    <div id="logged" class="container-b">
+      <div class="instruction">¡Has iniciado sesión correctamente!</div>
+      <div class="line-container">
+        <label>Perteneces a la línea:</label>
+        <b><span id="lineName"></span></b>
+      </div>
+      <div class="line-container">
+        <label>Contactos agregados este mes:</label>
+        <b><span id="contactsAdded"></span></b>
+      </div>
+      <div class="btnContainerReInicio">
+        <button id="reInicio" class="btnReInicio">
+          ¿Deseas iniciar sesión de nuevo?
+        </button>
+      </div>
+    </div>
+    <script src="../qrious.js"></script>
+    <script src="../signalr.js"></script>
+    <script src="popup.js"></script>
+  </body>
 </html>

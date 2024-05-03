@@ -1,15 +1,19 @@
-*{
-    font-family: sans-serif;
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .text-center{
     text-align: center;
 }
 
-.instruction{
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .container-h{
@@ -20,17 +24,19 @@
 
 .container{
     margin: 0px;
-    height: 400px;
+    height: 280px;
     width: 300px;
     padding: 10px;
 }
 
-.container-b{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
+
 
 .title{
     display: flex;
@@ -40,4 +46,60 @@
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.btnContainerReInicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnReInicio {
+    background-color: #e11c18;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #e11c18;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Agregando una sombra */
+}
+
+.btn-login:hover {
+    background-color: #c31816;
+}
+
+.line-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: medium;
+    margin-top: 10px;
 }
